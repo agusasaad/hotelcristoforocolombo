@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  position: relative;
+  background-image: url('./../../assets/images/hotel.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1300px;
+  z-index: 1;
+  padding: 0px 30px;
+}
+
+.content .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 700px;
+}
+
+.content .text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1.7px;
+  line-height: 1.25em;
+  text-wrap: balance;
+  font-family: var(--font-title);
+  color: var(--background);
+}
+
+.content .text .tips {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.content .text .tips p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--background);
+}
+
+.content .text .tips p i {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1080px) {
+  .content {
+    gap: 30px;
+    padding: 150px 20px 50px 20px;
+  }
+
+  .content .text h1 {
+    font-size: 50px;
+    letter-spacing: -1.5px;
+    max-width: 100%;
+  }
+
+  .content .text .tips p {
+    font-size: 16px;
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .content .text h1 {
+    font-size: 45px;
+    letter-spacing: -1px;
+    max-width: 100%;
+  }
+}
