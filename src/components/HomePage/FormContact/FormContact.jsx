@@ -32,7 +32,7 @@ const FormContact = () => {
           required
           name='mensaje'
           id='mensaje'
-          placeholder='Tu consulta aquí...'
+          placeholder='Tu reseña aquí...'
         ></textarea>
         <button type='submit'>Enviar</button>
       </div>
