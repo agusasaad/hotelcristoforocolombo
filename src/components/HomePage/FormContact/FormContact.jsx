@@ -27,13 +27,16 @@ const FormContact = () => {
           placeholder='Teléfono'
           required
         />
-        <input
-          type='text'
-          name='fecha'
-          id='fecha'
-          required
-          placeholder='Fecha de reserva'
-        />
+        <label>
+          <span>Fecha de reserva</span>
+          <input
+            type='date'
+            name='fecha'
+            id='fecha'
+            required
+            placeholder='Fecha de reserva'
+          />
+        </label>
         <textarea
           required
           name='mensaje'

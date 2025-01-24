@@ -25,6 +25,19 @@
   gap: 13px;
 }
 
+.container_inputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: rgb(105, 105, 105);
+}
+
+.container_inputs label span {
+  padding-left: 5px;
+  width: 100%;
+}
+
 .container_inputs input {
   padding: 9px 16px;
   font-family: inherit;
